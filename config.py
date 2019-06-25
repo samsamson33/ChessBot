@@ -45,6 +45,7 @@ USER_FLAG_BLACKLISTED = 1
 USER_FLAG_TOURNAMENT_1ST = 2
 USER_FLAG_TOURNAMENT_2ND = 4
 USER_FLAG_PATRON = 8
+USER_FLAG_MASTER = 16
 
 ELO_K = 75
 
@@ -93,7 +94,7 @@ BADGES = {
     "\U0001f5e1",
     "novice": "\U0001f4a1",
     "addicted": "\U0001f48a",
-    "international-master": "\U0001f3c6",
+    "master": "\U0001f3c6",
     "patron": "\U0001f4b3",
     "chess-bot-master": "\U0001f3f3",
     "blacklisted": "\U0001f6ab"
@@ -131,7 +132,7 @@ ELO_ROLES = {
 
 HELP = [
     {
-        "newgame [mention]": "Start a new game against someone!",
+        "newgame [mention]": "Start a new game against someone!\nSupported varients: atomic, koth, antichess, crazyhouse, horde, and racingkings.",
         "board": "View the board!",
         "move [LAN]": "Make a move using Long Notation, aka a2a3 to move the piece at a2 to a3. Promoting: a7a8q",
         "go [SAN]": "Make a move using Standard Notation, more complicated. If you don't know this, use {prefix}move",
@@ -146,7 +147,7 @@ HELP = [
         "leaderboard": "View the global elo leaderboard!",
         "ping": "View the latency of the bot!",
         "fen (mention)": "Get the FEN of a game!",
-        "pgn": "View a game's PGN!",
+        "pgn": "This command has been removed. use {prefix}game instead.",
         "hasbeat [mention 1] [mention 2]": "Check if one user has beat another!",
         "coinflip": "Flip a coin!",
     },
@@ -163,7 +164,7 @@ HELP = [
         "listserver": "List your server as a public Chess server!",
         "prefix [prefix]": "Change the bot prefix for your server!",
         "help": "You're reading it... buddy...",
-        "suggestion [suggestion]": "Offer up a suggestion to the oh great qwerty",
+        "suggestion [suggestion]": "Offer up a suggestion to the oh great qwerty.",
         "donate": "I need the money to keep ChessBot up, so please. Pay up.",
     }
 ]
